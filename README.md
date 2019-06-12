@@ -1,8 +1,8 @@
 # Ask Monzo (Peronal Alexa Skill) 💬
 
-This is very much a rough WIP. I'm sharing this, following a discussion on the [Monzo Community Forum](https://community.monzo.com/t/alexa-skill-account-linking-anyone-got-it-working-with-monzo/60242).
+This is very much a rough WIP. I'm sharing this following a discussion on the [Monzo Community Forum](https://community.monzo.com/t/alexa-skill-account-linking-anyone-got-it-working-with-monzo/60242).
 
-**Note:** I only have the balance query working at the minute, although [./src/managers/monzo.js](src/managers/monzo.js) has some other functions for getting account(s) and transactions too.
+**Note:** I only have the balance query working at the minute, although [src/managers/monzo.js](src/managers/monzo.js) has some other functions for getting account(s) and transactions too.
 
 ## Getting started 💻
 
@@ -14,7 +14,7 @@ This is very much a rough WIP. I'm sharing this, following a discussion on the [
 
     A `.nvmrc` file is also included in the project for reference.
 
-3. Install project dependencies
+3. Install project dependencies.
 
         $ npm i
 
@@ -26,7 +26,7 @@ As mentioned above, I only have balance working right now and you can debug that
 
 ### .env File
 
-You need to have a `.env` file in the project root when running the project locally. See [example](./.env.example)
+You need to have a `.env` file in the project root when running the project locally. See [example](.env.example).
 
 This should contains your `ACCESS_TOKEN` and `ACCOUNT_ID`.
 
@@ -41,6 +41,6 @@ ACCOUNT_ID=123abc456def_account_id
 
 The project is setup to be deployed to AWS Lambda.
 
-You'll also need to create a skill in the [Alexa Developer Console](https://developer.amazon.com/alexa) and add the [voice interaction model](./models/en-GB.json), along with your Lambda endpoints (once deployed).
+You'll also need to create a skill in the [Alexa Developer Console](https://developer.amazon.com/alexa) and add the [voice interaction model](models/en-GB.json), along with your Lambda endpoints (once deployed).
 
 _[I might add more details on this later, if I work on the project some more.]_
