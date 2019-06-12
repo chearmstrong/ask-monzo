@@ -1,0 +1,50 @@
+{
+  "name": "ask-monzo",
+  "version": "2.0.0",
+  "description": "",
+  "scripts": {
+    "deploy:dev": "sls deploy --stage dev --aws-profile personal",
+    "deploy:prod": "sls deploy --stage prod --aws-profile personal",
+    "debug:balance": "EVENT=balance node ./debug",
+    "lint": "eslint --fix src"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "ask-sdk": "^2.6.0",
+    "aws-sdk": "^2.473.0",
+    "dotenv": "^6.1.0",
+    "moment": "^2.24.0",
+    "monzo-js": "0.0.8",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-destructuring": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "pre-commit": "^1.2.2",
+    "release": "^6.0.1",
+    "serverless": "^1.45.0",
+    "serverless-webpack": "^4.2.0",
+    "virtual-alexa": "^0.6.14",
+    "webpack": "^3.10.0"
+  },
+  "main": "src/index.js",
+  "author": "Che Armstorng",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": true
+}

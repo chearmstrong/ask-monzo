@@ -1,0 +1,42 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "monzo",
+          "intents": [
+              {
+                  "name": "AMAZON.FallbackIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "BalanceIntent",
+                  "slots": [],
+                  "samples": [
+                      "give me my bank balance",
+                      "how much money is in my monzo account",
+                      "how much money is in my account",
+                      "how much money do I have",
+                      "what does my account look like",
+                      "what's my balance"
+                  ]
+              }
+          ],
+          "types": []
+      }
+  }
+}
